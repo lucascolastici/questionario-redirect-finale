@@ -2,24 +2,24 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <title>Questionario</title>
+  <meta charset="UTF-8">
+  <title>Redirect Questionario Finale</title>
   <script>
-    window.onload = function() {
-      var random = Math.random();
-      if (random < 0.5) {
-        window.location.href = "https://forms.gle/gAqwLPT2gdCGrnTu5";
-      } else {
-        window.location.href = "https://forms.gle/hWsXMxNmVgGrkYHd6";
-      }
-    };
+    function redirect() {
+      var links = [
+        "https://forms.gle/Dshwy5PMgwYt5Vz57",
+        "https://forms.gle/aBzrf2jNxgiv6xjL9"
+      ];
+      var randomIndex = Math.floor(Math.random() * links.length);
+      window.location.href = links[randomIndex];
+    }
   </script>
 </head>
-<body>
-  <p>Reindirizzamento in corso…</p>
+<body onload="redirect()">
+  <h1>questionario-redirect-finale</h1>
+  <p>Pagina di reindirizzamento casuale finale</p>
 </body>
 </html>
-
 
 
 
